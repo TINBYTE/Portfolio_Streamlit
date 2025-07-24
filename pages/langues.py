@@ -1,5 +1,6 @@
-# ===== FICHIER : pages/langues.py =====
+# ===== CORRECTION : pages/langues.py =====
 import streamlit as st
+import pandas as pd
 from data.langues_data import langues_data
 from utils.charts import create_langues_chart
 

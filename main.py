@@ -1,15 +1,14 @@
-# ===== FICHIER PRINCIPAL : main.py =====
+# ===== CORRECTION : main.py =====
 import streamlit as st
 from config.page_config import setup_page_config
 from styles.css_styles import load_custom_css
 from data.personal_data import personal_info
 from components.header import render_header
 from components.sidebar import render_sidebar
-from pages import (
-    accueil, profil, experiences, formation, 
-    projets, competences, langues, contact
-)
 from components.footer import render_footer
+
+# Import correct des modules pages
+from pages import accueil, profil, experiences, formation, projets, competences, langues, contact
 
 def main():
     # Configuration de la page

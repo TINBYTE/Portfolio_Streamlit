@@ -1,11 +1,12 @@
-# ===== FICHIER : utils/charts.py =====
 import plotly.express as px
 import plotly.graph_objects as go
+import pandas as pd
 
 def create_competences_chart(data):
     """Création du graphique des compétences"""
+    df = pd.DataFrame(data)
     fig = px.bar(
-        data, 
+        df, 
         x='Niveau', 
         y='Catégorie',
         orientation='h',
@@ -18,8 +19,9 @@ def create_competences_chart(data):
 
 def create_tech_pie_chart(data):
     """Création du graphique en secteurs des technologies"""
+    df = pd.DataFrame(data)
     fig = px.pie(
-        data,
+        df,
         values='Utilisation',
         names='Technologie',
         title="Répartition d'utilisation des technologies"
@@ -29,8 +31,9 @@ def create_tech_pie_chart(data):
 
 def create_langues_chart(data):
     """Création du graphique des langues"""
+    df = pd.DataFrame(data)
     fig = px.bar(
-        data,
+        df,
         x='Langue',
         y='Niveau',
         color='Type',

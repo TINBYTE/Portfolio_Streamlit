@@ -1,7 +1,7 @@
 # ===== FICHIER : data/formations_data.py =====
 formations = [
     {
-        "periode": "2023 - En cours",
+        "periode": "2023 - 2025",
         "diplome": "Master en Mathématiques Appliquées pour la Science des Données",
         "etablissement": "UNIVERSITÉ IBN ZOHR | FACULTÉ POLYDISCIPLINAIRE",
         "lieu": "OUARZAZATE, MAROC"
